@@ -42,7 +42,7 @@ jobs:
         run: dotnet test tests/Lua.Tests/Lua.Tests.csproj -c Release --no-restore --filter "TestCategory!=ExpectedFailure"
 
       - name: Pack
-        run: dotnet pack src/Lua/Lua.csproj -c Release --no-restore -o ./artifacts/nuget
+        run: dotnet pack src/Lua/Lua.csproj -c Release --no-restore -o ./artifacts/nuget -p:PackageId=AshtonMeuser.LuaCSharp
 
       - name: Upload package artifact
         uses: actions/upload-artifact@v4
