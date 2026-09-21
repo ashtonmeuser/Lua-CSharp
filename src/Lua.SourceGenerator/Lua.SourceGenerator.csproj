@@ -14,7 +14,7 @@
     <IsRoslynComponent>true</IsRoslynComponent>
 
     <!-- NuGet -->
-    <PackageId>LuaCSharp.SourceGenerator</PackageId>
+    <PackageId>$(LuaPackageIdPrefix)LuaCSharp.SourceGenerator</PackageId>
     <PackageTags>lua;interpreter</PackageTags>
     <Description>SourceGenerator for Lua-CSharp</Description>
   </PropertyGroup>

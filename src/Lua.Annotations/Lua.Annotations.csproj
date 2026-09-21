@@ -8,7 +8,7 @@
     <NoWarn>CS0436</NoWarn>
 
     <!-- NuGet Packaging -->
-    <PackageId>LuaCSharp.Annotations</PackageId>
+    <PackageId>$(LuaPackageIdPrefix)LuaCSharp.Annotations</PackageId>
     <PackageTags>lua;interpreter</PackageTags>
     <Description>Attributes for Lua-CSharp SourceGenerator</Description>
   </PropertyGroup>
