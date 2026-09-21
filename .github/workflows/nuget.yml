@@ -43,9 +43,9 @@ jobs:
 
       - name: Pack
         run: | 
-          dotnet pack src/Lua.Annotations/Lua.Annotations.csproj -c Release --no-restore -o ./artifacts/nuget
-          dotnet pack src/Lua.SourceGenerator/Lua.SourceGenerator.csproj -c Release --no-restore -o ./artifacts/nuget
-          dotnet pack src/Lua/Lua.csproj -c Release --no-restore -o ./artifacts/nuget
+          dotnet pack src/Lua.Annotations/Lua.Annotations.csproj -c Release --no-restore -o ./artifacts/nuget -p:PackageId=AshtonMeuser.LuaCSharp
+          dotnet pack src/Lua.SourceGenerator/Lua.SourceGenerator.csproj -c Release --no-restore -o ./artifacts/nuget -p:PackageId=AshtonMeuser.LuaCSharp
+          dotnet pack src/Lua/Lua.csproj -c Release --no-restore -o ./artifacts/nuget -p:PackageId=AshtonMeuser.LuaCSharp
 
       - name: Upload package artifact
         uses: actions/upload-artifact@v4
